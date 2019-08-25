@@ -19,7 +19,7 @@ const generateFiles = () => {
   }
 
   shell.exec(`git remote add origin ${githubRepo}`)
-  shell.exec(`git push -u origin master`)
+  shell.exec(`git push --force origin master`)
 }
 
 module.exports = generateFiles
