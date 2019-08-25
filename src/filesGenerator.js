@@ -6,14 +6,15 @@ const githubRepo = process.env.GITHUB_REPO
 const generateFiles = () => {
 
   console.log(`Script will commit ${commitsCount} times`);
-  const date = new Date()
 
   shell.exec('git init')
   shell.touch('FILE.TXT')
   shell.exec('git add .')
 
   for (let i = 0; i < commitsCount; i++) {
-    shell.exec(`echo '${date.getMilliseconds()}' >> FILE.TXT`)
+    const date = new Date()
+
+    shell.exec(`echo '${date}' >> FILE.TXT`)
     shell.exec(`git add .`)
     shell.exec(`git commit -m "Add ${date.getMilliseconds()}"`)
   }

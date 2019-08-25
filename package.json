@@ -15,6 +15,7 @@
   "homepage": "https://github.com/ovchingus/git-shit-done#readme",
   "dependencies": {
     "dotenv": "^8.1.0",
+    "invariant": "^2.2.4",
     "shelljs": "^0.8.3"
   },
   "scripts": {
