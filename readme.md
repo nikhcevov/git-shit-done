@@ -1,13 +1,13 @@
-# Ключевая возможность
+# Key features
 
-Автоматически делать достаточно коммитов, чтобы на гите была зеленая клеточка(contribution) за день.
+Commit automatically 10 times per day which causes ultra green commit history.
 
-## Технологии
+## Tech
 
-Можно рассмотреть вот эту штуку
+Try to use
 <https://www.npmjs.com/package/shelljs>
 
-## Использование
+## Usage
 
 ```bash
 git init
