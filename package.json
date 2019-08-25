@@ -1,0 +1,22 @@
+{
+  "name": "gitshitdone",
+  "version": "0.0.1",
+  "description": "Cheat contributions history on Github!",
+  "main": "src/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovchingus/git-shit-done.git"
+  },
+  "author": "Vladimir Ovechkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovchingus/git-shit-done/issues"
+  },
+  "homepage": "https://github.com/ovchingus/git-shit-done#readme",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  }
+}
