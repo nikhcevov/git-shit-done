@@ -10,11 +10,13 @@ Try to use
 ## Usage
 
 ```bash
-git init
-```
-
-```bash
 git clone https://github.com/ovchingus/git-shit-done
+
+cd ./git-shit-done/
+
+npm install
+
+npm start
 ```
 
 ### Then connect it to GitHub
