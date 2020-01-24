@@ -1,7 +1,6 @@
 # Git Shit Done
 
 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
-
 [![git-shit-done releases](https://img.shields.io/github/v/release/ovchingus/git-shit-done)](https://github.com/ovchingus/git-shit-done/releases)
 
 
@@ -23,12 +22,13 @@ cd ./git-shit-done/
 
 ### Options
 Run script with args:
- * -d Number of days in past become green)
- * -p Path to script working directory, only for runtime. Any non-git folder
- * -r Your GitHub repository to push commits, it may be private, so noone will see our falsy coommits)  
+ * -d Number of days in past become green).
+ * -p Path to script working directory, only for runtime. Any non-git folder.
+ * -r Your GitHub repository to push commits, it may be private, so noone will see our falsy coommits).
+ * -m Maximum commits per day. Currently random, from 1 to your choise.
 
 ### Example: 
 
 ```
-./script.sh -d 100 -p ~ -r git@github.com:yourNickname/repoName.git
+./script.sh -d 100 -p ~ -m 30 -r git@github.com:yourNickname/repoName.git
 ```
