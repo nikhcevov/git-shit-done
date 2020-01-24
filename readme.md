@@ -1,5 +1,10 @@
 # Git Shit Done
 
+[![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
+
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/ovchingus/git-shit-done/releases)
+
+
 ### What the hell
 
 Want to find work, but employeer don`t take you seriously? There is the easy solution: just make yourself 10x developer for previous 10 years!
