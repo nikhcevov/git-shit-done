@@ -1,11 +1,12 @@
-# Key features
+# Git Shit Done
 
-Commit automatically 10 times per day which causes ultra green commit history.
+### What the hell
 
+Want to find work, but employeer don`t take you seriously? There is the easy solution: just make yourself 10x developer for previous 10 years!
 
-## Usage
+### Usage
 
-For use that cheat you need to add SSH key for account.
+For use that cheat easily you it`s better to add SSH key for account.
 [How to](https://help.github.com/en/enterprise/2.16/user/articles/adding-a-new-ssh-key-to-your-github-account)
 
 When SSH is configured do next:
@@ -15,12 +16,14 @@ git clone https://github.com/ovchingus/git-shit-done
 cd ./git-shit-done/
 ```
 
-Then open .env file and choose count of commits and paste your created repository link.
+### Options
+Run script with args:
+ * -d Number of days in past become green)
+ * -p Path to script working directory, only for runtime. Any non-git folder
+ * -r Your GitHub repository to push commits, it may be private, so noone will see our falsy coommits)  
 
-Save changes and run script by:
+### Example: 
 
-```bash
-npm install
-
-npm start
+```
+./script.sh -d 100 -p ~ -r git@github.com:yourNickname/repoName.git
 ```
