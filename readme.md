@@ -1,7 +1,8 @@
 # Git Shit Done
 
 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/release/ovchingus/git-shit-done)
+
+[![git-shit-done releases](https://img.shields.io/github/v/release/ovchingus/git-shit-done)](https://github.com/ovchingus/git-shit-done/releases)
 
 
 ### What the hell
