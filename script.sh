@@ -3,6 +3,15 @@
 # Sources
 . ./commiter.sh
 
+# Platform check
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'Darwim' ]]; then
+   platform='macos'
+fi
+
 # Handle args
 while getopts ":r:d:p:m:" opt; do
     case $opt in
@@ -43,7 +52,12 @@ for ((day = 1; day <= $commit_days; day++)); do
         echo HELLO >"FILE${file}.txt"
         git add .
         git commit -m "$message"
-        when=$(date -R -v-"$day"d)
+        when='empty'
+        if [[ $platform == 'linux' ]]; then
+            when=$(date -R -d "$day"+ "days ago")
+        elif [[ $platform == 'macos' ]]; then
+            when=$(date -R -v-"$day"d)
+        fi
         GIT_COMMITTER_DATE="$when" git commit --amend --no-edit --date "$when"
     done
     cd ..
