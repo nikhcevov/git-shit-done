@@ -54,7 +54,7 @@ for ((day = 1; day <= $commit_days; day++)); do
         git commit -m "$message"
         when='empty'
         if [[ $platform == 'linux' ]]; then
-            when=$(date -R -d "$day"+ "days ago")
+            when=$(date -R -d "$day days ago")
         elif [[ $platform == 'macos' ]]; then
             when=$(date -R -v-"$day"d)
         fi
